@@ -1,9 +1,16 @@
+
 {
+  "scripts": {
+    "deploy": "npx truffle deploy --network msc",
+    "verify": "truffle run verify TizaraCoin --network msc --verifiers=sourcify"
+  },
+  
   "dependencies": {
     "@openzeppelin/contracts-upgradeable": "^5.0.2",
     "@openzeppelin/truffle-upgrades": "^1.21.0",
     "@truffle/hdwallet-provider": "^2.1.15",
     "msc-js": "^0.1.13",
+    "truffle": "^5.11.5",
     "truffle-plugin-verify": "^0.6.7"
   }
 }
